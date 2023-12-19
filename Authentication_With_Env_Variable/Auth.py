@@ -21,5 +21,17 @@ userName = str(input("Enter Your Name: "))
 
 clientSecret = int(input("Enter The Secret Key: "))
 
+'''
+Now we write our main program it is not a complex program. 
+We need to test envSecret and clientSecret with conditions. 
+If ClientSecret matches NVSecret, we will print a welcome note with username
+'''
+
+if envSecret == clientSecret :
+    print("Welcome {} Authentication Done".format(userName))
+
+elif envSecret != clientSecret :
+    print("Unauthorized 404")
+
 
 
