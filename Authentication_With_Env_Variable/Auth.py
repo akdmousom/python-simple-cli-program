@@ -9,4 +9,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+'''
+Now open your .env file and declear a variable with any value like secret = 1122334455. After declear the
+variable you have to get some value from user using input method.
+
+Now we have to import the secret key and contain the secret value in a variable
+'''
+envSecret = int(os.getenv('secret'))
+
+userName = str(input("Enter Your Name: "))
+
+clientSecret = int(input("Enter The Secret Key: "))
+
+
 
